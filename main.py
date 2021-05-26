@@ -1,6 +1,6 @@
 from flask import Flask, redirect,url_for, render_template, request
 
-app = Flask(__name__, template_folder='/Users/vladimirrukavisnikov/Documents/python_2021/templates')
+app = Flask(__name__, template_folder='templates/')
 
 
 @app.route("/", methods=["POST", "GET"])  # this sets the route to this page
