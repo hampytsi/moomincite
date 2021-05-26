@@ -24,11 +24,11 @@ def login():
 @app.route("/<usr>", methods=["POST", "GET"])
 def user(usr):
     if request.method == "POST":
-        if request.form["fruit"] == "банан":
+        if request.form["pic"] == "книги":
             return render_template("mumi_papa.html")
-        if request.form["fruit"] == "ананас":
+        if request.form["pic"] == "цветы":
             return render_template("mumi_mama.html")
-        if request.form["fruit"] == "абрикос":
+        if request.form["pic"] == "зонтик":
             return render_template("little_my.html")
     else:
         return render_template("opros.html")
